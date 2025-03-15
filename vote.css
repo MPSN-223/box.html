@@ -1,0 +1,28 @@
+h1{
+    direction: ltr;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: aqua;
+    color: antiquewhite;
+    text-shadow: 5px 1px 5px aqua;
+}
+
+input{
+    text-align: left;
+    background-color: rgb(213, 176, 238);
+    color: rgba(3,2,2,9,96);
+    text-shadow: 5px 1px 5px rgba(236,165,192);
+}
+
+button{
+    text-align: left;
+    background-color: rgb(213, 176, 238);
+    color: rgba(3,2,2,9,96);
+    text-shadow: 5px 1px 5px rgba(236,165,192);
+}
+
+body{
+    background-image: url();
+    background-size: 500px;
+    font-family: 
+}

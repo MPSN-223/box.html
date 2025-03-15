@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+    <link rel="stylesheet" href="cantten.js">
+</head>
+<body>
+    <table border="1">
+    <div class="container"> 
+  </div>
+  <script>
+    const quantities = document.querySelectorAll('quantity');
+    const grandtotal = document.getElementById('grandtotal');
+
+    quantities.forEach(input => {
+        input.addEventlistener('input',updateTotal);
+    });
+    fuction updateTotal(){
+        let grandTotalAmount = 0;
+
+        const rows=document.querySelectorAll('#menu tbody tr');
+
+        rows.forEach(row => {
+        const quantittyInput = row.querySelector('quantity');  
+        const price = parseFloat(row,cells[1].innerText.replace('rs',''));
+        const quantity = parseInt(quantityInput.value);
+        const totalCell = row.querySelector('total');
+
+        const rowTotal = price = quantity;
+        totalCell.innerText = 'rsrs{rowTotal.toFixed(2)}';
+
+        grandTotalAmount += rowTotal;
+    });
+   
+  </script>
+
+</body>
+</html>

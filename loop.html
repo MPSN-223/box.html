@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+    <title>document</title>
+</head>
+<body>
+    <style>
+        body{
+            h1{
+    direction: ltr;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: rgb(65, 30, 30);
+    color: antiquewhite;
+    text-shadow: 5px 1px 5px black;
+}
+        }
+    </style>
+    <h1>Hey can i get your phone🙏🙏🙏</h1>
+    <input type ="text"placeholder="jjhf" id="mess">
+    <button onclick="message()">submit</button>
+    <p id="res">ooh thank you❤️</p>
+   <script>
+    function "message()" {
+        var answer=document.getElementById("ans").value;
+        var res =document.getElementById("res")
+        while(answer!=="yes"){
+            res.innerHTML="Hey can i have your phone...😒😒"
+            return;
+        }
+            res.innerHTML="you are so nice...😍😍"
+    }    
+            </script>
+      
+
+</body>
+</html>

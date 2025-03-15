@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQury</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: rgb(34, 10, 10);
+            margin: 200px;
+            font-size: 40px;
+            border-radius: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box">Hey it me Box...!</div>
+    <button class="btnl" id="chandetext">Change Text</button>
+    <button id="hidebook">hide</button>
+    <button id="showbox">show</button>
+    <button id="changecolor">chanage Color</button>
+
+    <script>
+        $(document).ready(function(){
+            $("#changetext").click(function(){
+                $("#box").text("Text has been changes");
+             })
+        });
+
+        $("#hidebox").click(function(){
+            $("#box").fadeOut();
+        });
+
+        $("#showbox").click(function(){
+            $("#box").fadeIn();
+        })
+         
+
+    </script>
+ </body>
+</html>

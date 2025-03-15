@@ -1,0 +1,15 @@
+#d1:hover{
+    background-color: red;
+    box-shadow: 0 0 20px red;
+    transform: scale(1.1);
+}
+#d2:hover{
+    background-color:yellow;
+    box-shadow: 0 0 20px yellow;
+    transform:scale(1.1);   
+}
+#d:hover{
+    background-color: green;
+    box-shadow: 0 0 15px green;
+    transform: scale(1.1);   
+}
