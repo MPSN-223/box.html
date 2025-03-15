@@ -1,43 +1,109 @@
-*{
-    margin: 0;
+* {
+    margin:0;
     padding: 0;
     box-sizing: border-box;
-    font-family:Arial,Helvetica,sans-serf;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-body{
-    background: black;
+body {
+    background: linear-gradient(120deg,rgb(226, 184, 226),rgb(101, 170, 215));
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    padding:20px;
+    padding: 20px;
 }
-
-.container{
-    width:100%;
+.container {
+    width: 100%;
     max-width: 900px;
 }
-
-.profile-box{
-    display:flex;
-    flex-wrap: wrap-reverse;
-    background-color: black;
-    border-radius: 15px;
-    box-shadow: cornflowerblue;
+.profile-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap:nowrap;
+    background: linear-gradient(120deg,rgb(105, 190, 246)rgb(226, 184, 226));
+    border-radius: 10px;
+    box-shadow: 0 0 20px #070000;
     overflow: hidden;
+    align-items: stretch;
 }
 
-.left-section{
-    width:35%;
-    background: linear-gradient(135deg,yellow,blue);
-    color:white;
+.left-section {
+    flex: 1;
+    width: 35%;
+    background: linear-gradient(120deg,black,rgb(106, 176, 226));
+    color: white;
     padding: 20px;
-    text-align:center
-}
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
 
 .profile-img img{
-    width: 100px;
-    border: radius 50px;
-    border: 3px solid black;
+    width: 150px;
+    height: 150px;
+    border-radius: 150%;
+    border: 5px solid #030202;
+}
+.role{
+    font-style: italic;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+h3{
+    margin-top: 20px;
+}
+
+.Social-media a{
+    display: inline-block;
+    color: blanchedalmond;
+    margin: 10px;
+    font-size: 15px;
+}
+
+.right-section{
+    flex: 2;
+    width: 70%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+p{
+    margin-bottom: 10px;
+}
+.skills{
+    margin-bottom: 15px;
+}
+.progress{
+    height: 8px;
+    width: 100%;
+    background:rgb(31, 230, 98);
+    border-radius: 5px;
+    overflow: hidden;
+}
+.progress div{
+    height: 100px;
+    background: wheat;
+}
+ul{
+    padding-left: 20px;
+}
+li{
+    margin-bottom: 20px;
+}
+
+@media (max-width:768px) {
+    .profile-box{
+    flex-direction:column;
+    }
+.left-section, .right-section{
+    max-width: 100%;
+    width: 100%;
+    text-align: center;
+}
 }
